@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Encriptador De Texto</title>
+</head>
+<body>
+    <header>
+        <img src="Imagenes/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="8" placeholder="Ingrese el texto aqui" id="texto1" onkeypress="return SoloLetras(event);" pattern=".{3,99}" ></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()" >&#x1f512 Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">&#128275 Desencritar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje" cols="30" rows="8" id="texto"></textarea>
+            <div class="botones">
+                <button class="btn-pasar" onclick="pasar()">&#x2b05 Pasar Texto</button>
+                <button class="btn-copiar" onclick="copiaralportapapeles()">&#x1f5ca Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>Challenge ONE Encriptador De Texto Por Carlos Fabian Cardenas Ramos</h5>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
